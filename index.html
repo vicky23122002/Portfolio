@@ -16,248 +16,15 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <!-- custom script  -->
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="css/custom-styles.css" rel="stylesheet" />
     <!-- custom font -->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <!-- Custom css -->
-    <style>
-      .gallery-title {
-        font-size: 36px;
-        color: #42B32F;
-        text-align: center;
-        font-weight: 500;
-        margin-bottom: 70px;
-      }
-
-      .gallery-title:after {
-        content: "";
-        position: absolute;
-        width: 7.5%;
-        left: 46.5%;
-        height: 45px;
-        border-bottom: 1px solid #5e5e5e;
-      }
-
-      .filter-button {
-        font-size: 18px;
-        border: 1px solid #42B32F;
-        border-radius: 5px;
-        text-align: center;
-        color: #42B32F;
-        margin-bottom: 30px;
-      }
-
-      .filter-button:hover {
-        font-size: 18px;
-        border: 1px solid #42B32F;
-        border-radius: 5px;
-        text-align: center;
-        color: #ffffff;
-        background-color: #42B32F;
-      }
-
-      .btn-default:active .filter-button:active {
-        background-color: #42B32F;
-        color: white;
-      }
-
-      .port-image {
-        width: 100%;
-      }
-
-      .gallery_product {
-        margin-bottom: 30px;
-      }
-
-      /* Portfolio grid */
-
-      .container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 576px) {
-  .container {
-      max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-      max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-      max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-      max-width: 1140px;
-  }
-}
-.template-btn {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 12px 20px;
-  display: inline-block;
-  background: transparent;
-  cursor: pointer;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-.template-btn:hover {
-  color: white;
-  background: #f28500;
-}
-.portfolio-section {
-  padding-top: 30px;
-  transition: 1.3s;
-  box-sizing: border-box;
-  height: auto;
-}
-
-.portfolio-tab ul {
-  text-align: center;
-  margin-top: 50px;
-}
-.portfolio-tab ul li {
-  color: #000;
-  background: transparent;
-  display: inline;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 12px 16px;
-  border: 2px solid #e30b5d;
-  margin: 0 5px;
-  cursor: pointer;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-tap-highlight-color: transparent;
-}
-@media (max-width: 575.98px) {
-  .portfolio-tab ul li {
-    display: block;
-    margin: 10px auto;
-    max-width: 200px;
-  }
-}
-.portfolio-tab ul li:hover {
-  background: #e30b5d;
-  color: #fff
-}
-.portfolio-tab ul .active {
-  background: #e30b5d;
-  color: #fff
-}
-.clearfix:after {
-  display: table;
-  content: " ";
-  clear: both;
-}
-.portfolio-grid {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 300px;
-}
-@media (max-width: 768px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media only screen and (min-width: 768.1px) and (max-width: 991px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }		
-  }
-.portfolio-grid .portfolio {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	display:none;
-	overflow:hidden;
-}
-.portfolio-wrapper {
-  overflow:hidden;
-  position: relative !important;
-  cursor:pointer;
-}
-.portfolio-bg {
-  width: 100%;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  transition: 1s;
-  transform: scale(1)
-}
-.portfolio:hover .portfolio-bg{
-  transform: scale(1.2)
-}
-.first .portfolio-bg{
-  background-image: url('../portfolio/assets/img/example.jpg');
-  
-}
-.second .portfolio-bg{
-  background-image: url('../portfolio/assets/img/example.jpg');
-}
-.third .portfolio-bg{
-  background-image: url('../portfolio/assets/img/example.jpg');
-  
-}
-.portfolio .label {
-  position: absolute;
-  width: 100%;
-  height:100%;
-  bottom: 0;
-  transition: 0.5s;
-  opacity: 0;
-  visibility: hidden
-}
-
-.portfolio .label-bg {
-  background: #232323;
-  opacity: 0.7;
-  width: 100%;
-  height:100%;
-  position: absolute;
-  top:0;
-  left:0;
-  transition: 1px;
-}
-.portfolio .label-text {
-  color:#fff;
-  position: relative;
-  z-index:500;
-  padding:50px 20px;
-}
-.portfolio:hover .label {
-  opacity: 1;
-  visibility: visible;
-}
-.portfolio .text-category {
-  display:block;
-}
-.portfolio .template-btn {
-  background: #e30b5d;
-  border: 1px solid #e30b5d;
-  text-decoration: none;
-  margin-top: 20px;
-  font-weight: 500
-}
-    </style>
   </head>
-  <body id="page-top" style="font-family: 'Poppins';font-style: normal;">
+  <body id="home" style="font-family: 'Poppins';font-style: normal;">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand logo-nav" href="#page-top">
+        <a class="navbar-brand logo-nav" href="#home">
           <img src="assets/img/nav-logo-gif.gif" alt="..." style="height: 70px;" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Menu <i class="fas fa-bars ms-1"></i>
@@ -324,19 +91,10 @@
         </div>
       </div>
     </section>
-    <!-- Portfolio Grid-->
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-<section class="portfolio-section">
+
+    <!-- Portfolio Grid START -->
+    <section class="portfolio-section" id="portfolio">
       <div class="container">
-<!--         <h2 class="title">Portfolio</h2> -->
         <span class="hr-role"></span>
         <div class="portfolio-tab">
           <ul id="filters" class="clearfix">
@@ -428,8 +186,8 @@
         </div>
       </div>
     </section>
-</body>
-</html>
+    <!-- Portfolio Grid END -->
+
     <!-- About-->
     <section class="page-section" id="about">
       <div class="container">
@@ -501,34 +259,6 @@
           </li>
         </ul>
       </div>
-      <script>
-        $(document).ready(function(){
-
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
-        }
-        else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
-        }
-    });
-    
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
-
-});
-      </script>
     </section>
     <!-- Contact-->
     
@@ -551,36 +281,39 @@ $(this).addClass("active");
       </div>
     </footer>
 
+    <!-- jquery JS-->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <!-- custom Script -->
-<script> 
-$(function () {
-  var filterList = {
-    init: function () {
-      // MixItUp plugin
-      // http://mixitup.io
-      $('.portfolio-grid').mixItUp({
-        selectors: {
-          target: '.portfolio',
-          filter: '.filter'	
-        },
-        load: {
-          filter: 'all' // show app tab on first load
-        }     
-      });								
-    }
-  };
-  // Run the show!
-  filterList.init();
-});	</script>
+    <script> 
+    $(function () {
+      var filterList = {
+        init: function () {
+          // MixItUp plugin
+          // http://mixitup.io
+          $('.portfolio-grid').mixItUp({
+            selectors: {
+              target: '.portfolio',
+              filter: '.filter'	
+            },
+            load: {
+              filter: 'all' // show app tab on first load
+            }     
+          });								
+        }
+      };
+      // Run the show!
+      filterList.init();
+    });	</script>
    
     
   </body>
