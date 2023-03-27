@@ -3031,12 +3031,12 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #306dd7;
+  background-color: rgb(255, 225, 0);;
   border-color: #ffffff;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #192334;
+  background-color: rgb(51, 51, 51);;
   border-color: #ffffff;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -11410,7 +11410,6 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
